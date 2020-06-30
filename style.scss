@@ -54,9 +54,10 @@ header {
     grid-template-rows: 90vh;
     .menu {
         font-size: 1rem;
-        color: #1F271B;
-        font-weight: 500;
-        background-color: #F3FCF0;
+        color: black;
+        font-family: 'Oswald', sans-serif;
+        background-color: rgba(31, 39, 27, 0.014);
+        font-weight: 400;
         padding: 2rem;
         padding-top: 3rem;
         .menu-button {
@@ -88,7 +89,7 @@ header {
             
             p {
                 border-bottom: 1px solid black;
-                color: rgba(31, 39, 27, 0.322);
+                color: rgba(0, 0, 0, 0.315);
                 &:first-child {
                     padding-right: 4rem;
                 }
@@ -96,6 +97,44 @@ header {
             .selected {
                 font-weight: 700;
                 color: #1F271B;
+            }
+        }
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            .add {
+                padding-left: 5.5rem;
+                padding-top: .8rem;
+                font-size: 1.5rem;
+                padding-bottom: 1rem;
+                cursor: pointer;
+                &:hover {
+                    color: #EE4266;
+                }
+            }
+            .project {
+                cursor: pointer;
+                color: rgba(0, 0, 0, 0.473);
+                padding-bottom: .5rem;
+                font-size: 1.1rem;
+                font-weight: 200;
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: .5rem;
+                    padding-right: .8rem;
+                }
+                &:hover {
+                    color: #EE4266;
+                }
+                &.selected {
+                    color: black;
+                    font-weight: 400;
+                    i {
+                        font-size: .7rem;
+                        color: #EE4266;
+                    }
+                }
             }
         }
     }

@@ -82,9 +82,10 @@ header .nav-bar .right-bar i:hover {
 
 .left-menu .menu {
   font-size: 1rem;
-  color: #1F271B;
-  font-weight: 500;
-  background-color: #F3FCF0;
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  background-color: rgba(31, 39, 27, 0.014);
+  font-weight: 400;
   padding: 2rem;
   padding-top: 3rem;
 }
@@ -126,7 +127,7 @@ header .nav-bar .right-bar i:hover {
 
 .left-menu .menu .projects-buttons p {
   border-bottom: 1px solid black;
-  color: rgba(31, 39, 27, 0.322);
+  color: rgba(0, 0, 0, 0.315);
 }
 
 .left-menu .menu .projects-buttons p:first-child {
@@ -136,5 +137,60 @@ header .nav-bar .right-bar i:hover {
 .left-menu .menu .projects-buttons .selected {
   font-weight: 700;
   color: #1F271B;
+}
+
+.left-menu .menu .projects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left-menu .menu .projects-list .add {
+  padding-left: 5.5rem;
+  padding-top: .8rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.left-menu .menu .projects-list .add:hover {
+  color: #EE4266;
+}
+
+.left-menu .menu .projects-list .project {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.473);
+  padding-bottom: .5rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-menu .menu .projects-list .project i {
+  font-size: .5rem;
+  padding-right: .8rem;
+}
+
+.left-menu .menu .projects-list .project:hover {
+  color: #EE4266;
+}
+
+.left-menu .menu .projects-list .project.selected {
+  color: black;
+  font-weight: 400;
+}
+
+.left-menu .menu .projects-list .project.selected i {
+  font-size: .7rem;
+  color: #EE4266;
 }
 /*# sourceMappingURL=style.css.map */
