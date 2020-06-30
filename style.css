@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  border: 1px solid black;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 10vh;
+      grid-template-rows: 10vh;
+}
+
+header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1F271B;
+  color: #F3FCF0;
+}
+
+header .nav-bar .left-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header .nav-bar .left-bar #logo {
+  margin-left: 2rem;
+  height: 8vh;
+}
+
+header .nav-bar .left-bar #name {
+  padding-left: 1rem;
+  font-size: 2.2rem;
+}
+
+header .nav-bar .right-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+header .nav-bar .right-bar i {
+  padding: 2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+header .nav-bar .right-bar i:hover {
+  color: #EE4266;
+}
+
+.left-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 1fr;
+      grid-template-columns: 25vw 1fr;
+  -ms-grid-rows: 90vh;
+      grid-template-rows: 90vh;
+}
+
+.left-menu .menu {
+  font-size: 1rem;
+  color: #1F271B;
+  font-weight: 500;
+  background-color: #F3FCF0;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+
+.left-menu .menu .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.left-menu .menu .menu-button .menu-text {
+  padding-left: 1rem;
+}
+
+.left-menu .menu .menu-button .menu-data {
+  font-size: .65rem;
+  margin-left: .5rem;
+}
+
+.left-menu .menu .menu-button i {
+  font-size: 1.3rem;
+}
+
+.left-menu .menu .menu-button:hover {
+  color: #540D6E;
+}
+
+.left-menu .menu .projects-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5rem;
+}
+
+.left-menu .menu .projects-buttons p {
+  border-bottom: 1px solid black;
+  color: rgba(31, 39, 27, 0.322);
+}
+
+.left-menu .menu .projects-buttons p:first-child {
+  padding-right: 4rem;
+}
+
+.left-menu .menu .projects-buttons .selected {
+  font-weight: 700;
+  color: #1F271B;
+}
+/*# sourceMappingURL=style.css.map */
