@@ -41,7 +41,7 @@ header {
                 font-size: 1.6rem;
                 cursor: pointer;
                 &:hover {
-                    color: #EE4266;
+                    color: #FFD23F;
                 }
             }
         }
@@ -55,9 +55,10 @@ header {
     .menu {
         font-size: 1rem;
         color: black;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Lato', sans-serif;
         background-color: rgba(31, 39, 27, 0.014);
-        font-weight: 400;
+        border-right: 1px solid rgba(68, 66, 66, 0.116);
+        font-weight: 300;
         padding: 2rem;
         padding-top: 3rem;
         .menu-button {
@@ -79,19 +80,21 @@ header {
                 font-size: 1.3rem;
             }
             &:hover {
-                color: #540D6E;
+                color: #EE4266;
             }
         }
 
         .projects-buttons {
             display: flex;
-            margin-top: 5rem;
+            margin-top: 2.5rem;
             
             p {
+                flex: 1;
                 border-bottom: 1px solid black;
                 color: rgba(0, 0, 0, 0.315);
+                cursor: pointer;
                 &:first-child {
-                    padding-right: 4rem;
+                    padding-right: 6rem;
                 }
             }
             .selected {
@@ -103,21 +106,21 @@ header {
             display: flex;
             flex-direction: column;
             .add {
-                padding-left: 5.5rem;
-                padding-top: .8rem;
+                align-self: center;
+                padding-top: 1rem;
                 font-size: 1.5rem;
                 padding-bottom: 1rem;
                 cursor: pointer;
                 &:hover {
-                    color: #EE4266;
+                    color: #FFD23F;
                 }
             }
             .project {
                 cursor: pointer;
                 color: rgba(0, 0, 0, 0.473);
-                padding-bottom: .5rem;
-                font-size: 1.1rem;
-                font-weight: 200;
+                padding-bottom: 1rem;
+                font-size: 1rem;
+                font-weight: 300;
                 display: flex;
                 align-items: center;
                 i {
@@ -130,15 +133,125 @@ header {
                 &.selected {
                     color: black;
                     font-weight: 400;
+                    font-size: 1.1rem;
                     i {
                         font-size: .7rem;
-                        color: #EE4266;
+                        color: #FFD23F;;
                     }
                 }
             }
         }
     }
     .main-screen {
-        
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        .category-title {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .doots-items {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+            .check-title {
+                display: flex;
+                p .check {
+                    border: 1px solid black;
+                    border-radius: 50%;
+                }
+                .check {
+                    cursor: pointer;
+                    align-self: flex-end;
+                    margin-bottom: .2rem;
+                    padding: .15rem;   
+                }
+                .doot-title {
+                    margin-left: 2rem;
+                    font-size: 1.1rem;
+                }
+            }
+            .tags {
+                display: flex;
+                
+                p:first-child {
+                    margin-right: 1.5rem;
+                }
+                .project-title {
+
+                    display: flex;
+                    font-size: .7rem;
+                    font-weight: 700;
+                    border: 1px solid black;
+                    border-radius: 25px;
+                    padding: .3rem;
+                    padding-left: .7rem;
+                    padding-right: .7rem;
+                    margin-bottom: .3rem;
+                    background-color: rgba(238, 66, 103, 0.205);
+                    text-shadow: 1px 1px 1px white;
+                }
+                .high-priority {
+                    background-color: #BB1136;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                }
+                .medium-priority {
+                    background-color: #FFD23F;
+                }
+                .low-priority {
+                    background-color: #84E166;
+                }
+            }
+        }
+        .new-task {
+            display: flex;
+            font-size: 1rem;
+            align-items: center;
+            &:hover {       
+                i {
+                    border: 5px solid #FFD23F;
+                    border-radius: 50px;
+                    padding: .4rem;
+                    padding-top: .3rem;
+                }
+                p {
+                    margin-left: .6rem;
+                    border-bottom: .5rem solid #FFD23F;
+                }
+            }
+            cursor: pointer;
+            i {
+                text-shadow: 1px  1px 1px #1F271B;
+                color: #FFD23F;
+                font-size: 1.5rem;
+                transition: all ease-in-out .3s;
+                
+            }
+            p {
+                margin-left: 1.7rem;
+                transition: all ease-in-out .3s;
+            }
+            
+        }
     }
 }
+
+.done {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.548);
+}
+
+.done-check {
+    background-color: #FFD23F;
+}
+
+.menu-left-active {
+    font-weight: 700;
+}
+

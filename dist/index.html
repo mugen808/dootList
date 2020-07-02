@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/7369e71399.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/style.css">
     <title>The ToDo List</title>
 </head>
@@ -26,7 +27,7 @@
     <section class="left-menu">
         <div class="menu">
             <div class="menu-button">
-                <i class="far fa-calendar-times"></i><span class="menu-text">Today</span><span class="menu-data">(3)</span>
+                <i class="far fa-calendar-times"></i><span class="menu-text menu-left-active">Today</span><span class="menu-data">(3)</span>
             </div>
             <div class="menu-button">
                 <i class="far fa-calendar-alt"></i><span class="menu-text">This week</span><span class="menu-data">(1)</span>
@@ -34,9 +35,12 @@
             <div class="menu-button">
                 <i class="fas fa-calendar-week"></i><span class="menu-text">Next 10 days</span><span class="menu-data">(5)</span>
             </div>
+            <div class="menu-button">
+                <i class="fas fa-calendar-week"></i><span class="menu-text">Completed doots</span><span class="menu-data">(5)</span>
+            </div>
             <div class="projects-buttons">
-                <p class="selected">Projects</p>
-                <p>Priority items</p>
+                <p class="project-button selected">Projects</p>
+                <p class="priority-button">Priority items</p>
             </div>
             <div class="projects-list">
                 <i class="fas fa-plus-circle add"></i>
@@ -52,7 +56,60 @@
             </div>
         </div>
         <div class="main-screen">
-
+            <div class="category-title">
+                <h1 >Today</h1>
+                <div class="form-group">
+                    <select class="form-control" name="filter">
+                        <option disabled selected value>Sort by:</option>
+                            <option id="priority">Priority</option>
+                            <option id="project">Project</option>
+                    </select>
+                </div>
+            </div>
+            <div class="doots-items">
+                <div class="check-title">
+                    <p><i class="check fas fa-check"></i></p>
+                    <p class="doot-title">Business meeting</p>
+                </div>
+                <div class="tags">
+                    <p class="project-title high-priority">High priority</p>
+                    <p class="project-title">Default project</p>
+                </div>
+            </div>
+            <div class="doots-items">
+                <div class="check-title">
+                    <p><i class="check fas fa-check"></i></p>
+                    <p class="doot-title">Buy groceries</p>
+                </div>
+                <div class="tags">
+                    <p class="project-title medium-priority">Medium priority</p>
+                    <p class="project-title">Home chores</p>
+                </div>
+            </div>
+            <div class="doots-items">
+                <div class="check-title">
+                    <p><i class="check fas fa-check"></i></p>
+                    <p class="doot-title">Walk the dog</p>
+                </div>
+                <div class="tags">
+                    <p class="project-title medium-priority">Medium priority</p>
+                    <p class="project-title">Home chores</p>
+                </div>
+            </div>
+            <div class="doots-items">
+                <div class="check-title">
+                    <p><i class="check fas fa-check"></i></p>
+                    <p class="doot-title">Make small changes on current project</p>
+                </div>
+                <div class="tags">
+                    <p class="project-title low-priority">Low priority</p>
+                    <p class="project-title">Business plan</p>
+                </div>
+            </div>
+            <div class="new-task">
+                <i class="fas fa-plus"></i>
+                <p>Create new task</p>
+            </div>
         </div>
     </section>
     <script src="main.js"></script>
