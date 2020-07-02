@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7369e71399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/style.css">
+    <title>The ToDo List</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="left-bar">
+                <img id="logo" src="/icons/logo.svg" alt="">
+                <p id="name">doot</p>
+            </div>
+            <div class="right-bar">
+                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-bell"></i>
+                <i class="far fa-calendar-check"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="left-menu">
+        <div class="menu">
+            <div class="menu-button">
+                <i class="far fa-calendar-times"></i><span class="menu-text">Today</span><span class="menu-data">(3)</span>
+            </div>
+            <div class="menu-button">
+                <i class="far fa-calendar-alt"></i><span class="menu-text">This week</span><span class="menu-data">(1)</span>
+            </div>
+            <div class="menu-button">
+                <i class="fas fa-calendar-week"></i><span class="menu-text">Next 10 days</span><span class="menu-data">(5)</span>
+            </div>
+            <div class="projects-buttons">
+                <p class="selected">Projects</p>
+                <p>Priority items</p>
+            </div>
+            <div class="projects-list">
+                <i class="fas fa-plus-circle add"></i>
+                <div class="project selected">
+                    <i class="fas fa-dot-circle"></i><span class="menu-text">Default project</span>
+                </div>
+                <div class="project">
+                    <i class="fas fa-dot-circle"></i><span class="menu-text">Default project</span>
+                </div>
+                <div class="project">
+                    <i class="fas fa-dot-circle"></i><span class="menu-text">Default project</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-screen">
+
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
