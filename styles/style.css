@@ -354,4 +354,256 @@ header .nav-bar .right-bar i:hover {
 .menu-left-active {
   font-weight: 700;
 }
+
+.form-modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #383838;
+}
+
+.form-modal .form-container {
+  padding: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #eeeded;
+  width: 40vw;
+  border: 2px solid rgba(58, 58, 58, 0.116);
+  border-radius: 10px;
+}
+
+.item-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.item-form h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.item-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item-form .name-field, .item-form .date-field, .item-form .description-field, .item-form .project-field {
+  color: rgba(51, 51, 51, 0.63);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.3rem;
+  font-weight: 700;
+}
+
+.item-form .name-field input, .item-form .date-field input, .item-form .description-field input, .item-form .project-field input {
+  background-color: #eeeded;
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .3rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  outline: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.item-form .name-field input::-webkit-input-placeholder, .item-form .date-field input::-webkit-input-placeholder, .item-form .description-field input::-webkit-input-placeholder, .item-form .project-field input::-webkit-input-placeholder {
+  font-size: .7rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.431);
+}
+
+.item-form .name-field input:-ms-input-placeholder, .item-form .date-field input:-ms-input-placeholder, .item-form .description-field input:-ms-input-placeholder, .item-form .project-field input:-ms-input-placeholder {
+  font-size: .7rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.431);
+}
+
+.item-form .name-field input::-ms-input-placeholder, .item-form .date-field input::-ms-input-placeholder, .item-form .description-field input::-ms-input-placeholder, .item-form .project-field input::-ms-input-placeholder {
+  font-size: .7rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.431);
+}
+
+.item-form .name-field input::placeholder, .item-form .date-field input::placeholder, .item-form .description-field input::placeholder, .item-form .project-field input::placeholder {
+  font-size: .7rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 0.431);
+}
+
+.item-form .name-field input:focus, .item-form .date-field input:focus, .item-form .description-field input:focus, .item-form .project-field input:focus {
+  -webkit-box-shadow: 3px 3px 16px #8b8b8b;
+          box-shadow: 3px 3px 16px #8b8b8b;
+  background-color: white;
+}
+
+.item-form .description-field {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item-form .description-field #description {
+  resize: none;
+  padding-left: .5rem;
+  padding-top: .5rem;
+  height: 10vh;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.431);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.431);
+  word-break: break-word;
+  outline: none;
+  background-color: #eeeded;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  overflow: auto;
+}
+
+.item-form .description-field #description:focus {
+  background-color: white;
+  -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.431);
+          box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.431);
+}
+
+.item-form .project-field p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio .project-title {
+  font-size: .5rem;
+  font-weight: 700;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: .3rem;
+  padding-left: .7rem;
+  padding-right: .7rem;
+  margin-bottom: .3rem;
+  background-color: rgba(238, 66, 103, 0.205);
+  text-shadow: 1px 1px 5px white;
+}
+
+.radio .priority-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  padding-top: 0;
+  padding-bottom: .5rem;
+}
+
+.radio .priority-container label {
+  margin-left: .2rem;
+  background-color: white;
+  border-color: rgba(56, 56, 56, 0.5);
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+.radio .priority-container #high:checked + label {
+  background-color: #BB1136;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.radio .priority-container #low:checked + label {
+  background-color: #47c31ed8;
+}
+
+.radio .priority-container #medium:checked + label {
+  background-color: #FFD23F;
+}
+
+#addTaskButton {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border: 5px solid #FFD23F;
+  border-radius: 50px;
+  padding: .4rem;
+  padding-top: .3rem;
+  -webkit-transition: all ease-in-out .1s;
+  transition: all ease-in-out .1s;
+  width: 3.6rem;
+}
+
+#addTaskButton:focus {
+  outline: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: black;
+  color: #FFD23F;
+  border: 5px solid black;
+}
+
+#projects {
+  background-color: #eeeded;
+  color: rgba(51, 51, 51, 0.431);
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .3rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  outline: none;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  font-size: .7rem;
+}
+
+#projects:focus {
+  -webkit-box-shadow: 3px 3px 16px #8b8b8b;
+          box-shadow: 3px 3px 16px #8b8b8b;
+  background-color: white;
+}
 /*# sourceMappingURL=style.css.map */
