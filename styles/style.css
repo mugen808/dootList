@@ -71,7 +71,7 @@ header .nav-bar .right-bar i:hover {
   color: #FFD23F;
 }
 
-.left-menu {
+.main-content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25vw 1fr;
@@ -80,7 +80,7 @@ header .nav-bar .right-bar i:hover {
       grid-template-rows: 90vh;
 }
 
-.left-menu .menu {
+.main-content .menu {
   font-size: 1rem;
   color: black;
   font-family: 'Lato', sans-serif;
@@ -91,7 +91,7 @@ header .nav-bar .right-bar i:hover {
   padding-top: 3rem;
 }
 
-.left-menu .menu .menu-button {
+.main-content .menu .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,31 +102,31 @@ header .nav-bar .right-bar i:hover {
   margin-bottom: 1.5rem;
 }
 
-.left-menu .menu .menu-button .menu-text {
+.main-content .menu .menu-button .menu-text {
   padding-left: 1rem;
 }
 
-.left-menu .menu .menu-button .menu-data {
+.main-content .menu .menu-button .menu-data {
   font-size: .65rem;
   margin-left: .5rem;
 }
 
-.left-menu .menu .menu-button i {
+.main-content .menu .menu-button i {
   font-size: 1.3rem;
 }
 
-.left-menu .menu .menu-button:hover {
+.main-content .menu .menu-button:hover {
   color: #EE4266;
 }
 
-.left-menu .menu .projects-buttons {
+.main-content .menu .projects-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 2.5rem;
 }
 
-.left-menu .menu .projects-buttons p {
+.main-content .menu .projects-buttons p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -135,16 +135,16 @@ header .nav-bar .right-bar i:hover {
   cursor: pointer;
 }
 
-.left-menu .menu .projects-buttons p:first-child {
+.main-content .menu .projects-buttons p:first-child {
   padding-right: 6rem;
 }
 
-.left-menu .menu .projects-buttons .selected {
+.main-content .menu .projects-buttons .selected {
   font-weight: 700;
   color: #1F271B;
 }
 
-.left-menu .menu .projects-list {
+.main-content .menu .projects-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +154,7 @@ header .nav-bar .right-bar i:hover {
           flex-direction: column;
 }
 
-.left-menu .menu .projects-list .add {
+.main-content .menu .projects-list .add {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -164,11 +164,11 @@ header .nav-bar .right-bar i:hover {
   cursor: pointer;
 }
 
-.left-menu .menu .projects-list .add:hover {
+.main-content .menu .projects-list .add:hover {
   color: #FFD23F;
 }
 
-.left-menu .menu .projects-list .project {
+.main-content .menu .projects-list .project {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.473);
   padding-bottom: 1rem;
@@ -182,27 +182,27 @@ header .nav-bar .right-bar i:hover {
           align-items: center;
 }
 
-.left-menu .menu .projects-list .project i {
+.main-content .menu .projects-list .project i {
   font-size: .5rem;
   padding-right: .8rem;
 }
 
-.left-menu .menu .projects-list .project:hover {
+.main-content .menu .projects-list .project:hover {
   color: #EE4266;
 }
 
-.left-menu .menu .projects-list .project.selected {
+.main-content .menu .projects-list .project.selected {
   color: black;
   font-weight: 400;
   font-size: 1.1rem;
 }
 
-.left-menu .menu .projects-list .project.selected i {
+.main-content .menu .projects-list .project.selected i {
   font-size: .7rem;
   color: #FFD23F;
 }
 
-.left-menu .main-screen {
+.main-content .main-screen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,7 +213,7 @@ header .nav-bar .right-bar i:hover {
   margin: 2rem;
 }
 
-.left-menu .main-screen .category-title {
+.main-content .main-screen .category-title {
   font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,7 +227,7 @@ header .nav-bar .right-bar i:hover {
   margin-bottom: 2rem;
 }
 
-.left-menu .main-screen .doots-items {
+.main-content .main-screen .doots-items {
   margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,18 +241,18 @@ header .nav-bar .right-bar i:hover {
   border-bottom: 1px solid rgba(128, 128, 128, 0.219);
 }
 
-.left-menu .main-screen .doots-items .check-title {
+.main-content .main-screen .doots-items .check-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.left-menu .main-screen .doots-items .check-title p .check {
+.main-content .main-screen .doots-items .check-title p .check {
   border: 1px solid black;
   border-radius: 50%;
 }
 
-.left-menu .main-screen .doots-items .check-title .check {
+.main-content .main-screen .doots-items .check-title .check {
   cursor: pointer;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -260,22 +260,22 @@ header .nav-bar .right-bar i:hover {
   padding: .15rem;
 }
 
-.left-menu .main-screen .doots-items .check-title .doot-title {
+.main-content .main-screen .doots-items .check-title .doot-title {
   margin-left: 2rem;
   font-size: 1.1rem;
 }
 
-.left-menu .main-screen .doots-items .tags {
+.main-content .main-screen .doots-items .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.left-menu .main-screen .doots-items .tags p:first-child {
+.main-content .main-screen .doots-items .tags p:first-child {
   margin-right: 1.5rem;
 }
 
-.left-menu .main-screen .doots-items .tags .project-title {
+.main-content .main-screen .doots-items .tags .project-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,21 +291,21 @@ header .nav-bar .right-bar i:hover {
   text-shadow: 1px 1px 1px white;
 }
 
-.left-menu .main-screen .doots-items .tags .high-priority {
+.main-content .main-screen .doots-items .tags .high-priority {
   background-color: #BB1136;
   color: white;
   text-shadow: 1px 1px black;
 }
 
-.left-menu .main-screen .doots-items .tags .medium-priority {
+.main-content .main-screen .doots-items .tags .medium-priority {
   background-color: #FFD23F;
 }
 
-.left-menu .main-screen .doots-items .tags .low-priority {
+.main-content .main-screen .doots-items .tags .low-priority {
   background-color: #84E166;
 }
 
-.left-menu .main-screen .new-task {
+.main-content .main-screen .new-task {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,19 +316,19 @@ header .nav-bar .right-bar i:hover {
   cursor: pointer;
 }
 
-.left-menu .main-screen .new-task:hover i {
+.main-content .main-screen .new-task:hover i {
   border: 5px solid #FFD23F;
   border-radius: 50px;
   padding: .4rem;
   padding-top: .3rem;
 }
 
-.left-menu .main-screen .new-task:hover p {
+.main-content .main-screen .new-task:hover p {
   margin-left: .6rem;
-  border-bottom: .5rem solid #FFD23F;
+  border-bottom: 0.5rem solid #FFD23F;
 }
 
-.left-menu .main-screen .new-task i {
+.main-content .main-screen .new-task i {
   text-shadow: 1px  1px 1px #1F271B;
   color: #FFD23F;
   font-size: 1.5rem;
@@ -336,7 +336,7 @@ header .nav-bar .right-bar i:hover {
   transition: all ease-in-out .3s;
 }
 
-.left-menu .main-screen .new-task p {
+.main-content .main-screen .new-task p {
   margin-left: 1.7rem;
   -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;

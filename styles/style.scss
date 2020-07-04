@@ -1,0 +1,33 @@
+$darkgray: #1F271B;
+$lightback: #F3FCF0;
+$accent: #FFD23F;
+$hoverColor: #EE4266;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 62.5%;
+}
+
+@import './header';
+
+@import './maincontent';
+
+.done {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.548);
+}
+
+.done-check {
+    background-color: $accent;
+}
+
+.menu-left-active {
+    font-weight: 700;
+}
+
