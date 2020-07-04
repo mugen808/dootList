@@ -112,27 +112,25 @@
             </div>
         </div>
     </main>
-    
-    <script src="main.js"></script>
     <div class="form-modal">
         <div class="form-container">
             <div class="item-form">
                 <h2>Add a new task</h2>
-                <form>
+                <form id="modal-form">
                     <div class="name-field">
                         <input type="text" name="item-title" id="item-title" placeholder="Task name" required>
                     </div>
                     <div class="project-field">
-                        <!-- <input type="text" name="item-duedate" placeholder="Project name" required> -->
                         <select name="projects" id="projects">
-                            <option value="" disabled selected>Add to project</option> 
-                            <option value="project1">Default project</option> 
+                            <option value=""selected>Add to project</option> 
+                            <option value="project1">Default project</option>
+                            <option value="project1">Default project2</option> 
                         </select>
                         <p>or</p>
                         <input type="text" name="project-title" id="new-project" placeholder="Create new project" required>
                     </div>
                     <div class="date-field">
-                        <input type="date" name="item-duedate" required>
+                        <input type="date" name="item-duedate" id="item-date" required>
                     </div>
                     <div class="description-field">
                         <textarea name="description-field" id="description"placeholder="Task notes"></textarea>
@@ -152,11 +150,12 @@
                             <label for="high" class="project-title high-priority">High</label>
                         </div>
                     </div>
-                    <input type="submit" id="addTaskButton" value="+">
+                    <input type="button" id="addTaskButton" value="+">
                 </form>
             </div>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
 

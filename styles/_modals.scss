@@ -147,12 +147,16 @@
     padding-top: .3rem;
     transition: all ease-in-out .1s;
     width: 3.6rem;
-    &:focus {
+    &:active {
         outline: none;
         transform: scale(1.1);
         background-color: black;
         color: $accent;
-        border: 5px solid black;
+        border:
+         5px solid black;
+    }
+    &:focus {
+        outline: none;
     }
 }
 

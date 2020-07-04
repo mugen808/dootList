@@ -576,13 +576,17 @@ header .nav-bar .right-bar i:hover {
   width: 3.6rem;
 }
 
-#addTaskButton:focus {
+#addTaskButton:active {
   outline: none;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: black;
   color: #FFD23F;
   border: 5px solid black;
+}
+
+#addTaskButton:focus {
+  outline: none;
 }
 
 #projects {
