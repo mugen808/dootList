@@ -26,14 +26,14 @@
     </header>
     <main class="main-content">
         <div class="menu">
-            <div class="menu-button">
+            <div class="menu-button" id="today">
                 <i class="far fa-calendar-times"></i><span class="menu-text menu-left-active">Today</span><span class="menu-data">(3)</span>
             </div>
-            <div class="menu-button">
+            <div class="menu-button" id="week">
                 <i class="far fa-calendar-alt"></i><span class="menu-text">This week</span><span class="menu-data">(1)</span>
             </div>
             <div class="menu-button">
-                <i class="fas fa-calendar-week"></i><span class="menu-text">Next 10 days</span><span class="menu-data">(5)</span>
+                <i class="fas fa-calendar-week" id="ten-days"></i><span class="menu-text">Next 10 days</span><span class="menu-data">(5)</span>
             </div>
             <div class="menu-button">
                 <i class="fas fa-calendar-week"></i><span class="menu-text">Completed doots</span><span class="menu-data">(5)</span>
@@ -57,7 +57,7 @@
         </div>
         <div class="main-screen">
             <div class="category-title">
-                <h1 >Today</h1>
+                <h1 id="title">Today</h1>
                 <div class="form-group">
                     <select class="form-control" name="filter">
                         <option disabled selected value>Sort by:</option>
@@ -108,14 +108,14 @@
             </div>
             <div class="new-task">
                 <i class="fas fa-plus"></i>
-                <p>Create new task</p>
+                <p id="new-task-button">Create new task</p>
             </div>
         </div>
     </main>
-    <div class="form-modal">
+    <div class="form-modal modalHide">
         <div class="form-container">
             <div class="item-form">
-                <h2>Add a new task</h2>
+                <h2>Add a new task</h2><span><i id="close-modal" class="fas fa-times"></i></span>
                 <form id="modal-form">
                     <div class="name-field">
                         <input type="text" name="item-title" id="item-title" placeholder="Task name" required>
@@ -159,5 +159,3 @@
     <script src="main.js"></script>
 </body>
 </html>
-
-<!-- <input type="text" name="item-notes" id="description" placeholder="Task notes">    -->

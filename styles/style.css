@@ -396,6 +396,15 @@ header .nav-bar .right-bar i:hover {
   margin-bottom: 1rem;
 }
 
+.item-form i {
+  font-size: 1rem;
+  position: relative;
+  float: right;
+  bottom: 12vh;
+  left: 3vw;
+  cursor: pointer;
+}
+
 .item-form form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,5 +649,13 @@ header .nav-bar .right-bar i:hover {
   background-color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.modalHide {
+  display: none;
+}
+
+.modalShow {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

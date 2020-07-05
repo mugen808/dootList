@@ -30,6 +30,14 @@
         margin-top: .5rem;
         margin-bottom: 1rem;
     }
+    i {
+        font-size: 1rem;
+        position: relative;
+        float: right;
+        bottom: 12vh;
+        left: 3vw;
+        cursor: pointer;
+    }
     form {
         display: flex;
         flex-direction: column;
@@ -200,4 +208,12 @@
         background-color: rgb(255, 255, 255);
         transform: scale(1.1);
     }
+}
+
+.modalHide {
+    display: none;
+}
+
+.modalShow {
+    display: block;
 }

@@ -1,3 +1,9 @@
+const newtaskButton = document.querySelector('#new-task-button')
+newtaskButton.addEventListener("click", () => {
+    const modalScreen = document.querySelector('.form-modal');
+    modalScreen.classList.remove("modalHide");
+})
+
 const projectsArray = [];
 
 function getPriority () {
@@ -30,10 +36,13 @@ function createNewProject () {
     const newObject = {};
     const itemTitle = document.querySelector('#item-title');
     const itemDate = document.querySelector('#item-date');
-    const itemNotes = document.querySelector('#description')
+    const itemNotes = document.querySelector('#description');
+    const modalScreen = document.querySelector('.form-modal');
     
+    // stops user from proceding without the mandatory values
     if (!itemTitle.value || !itemDate.value || !itemNotes.value || !getPriority() || !getProject()) {
         return false;
+    
     } else {
         newObject.title = itemTitle.value;
         newObject.date = itemDate.value;
@@ -42,7 +51,7 @@ function createNewProject () {
         newObject.project = getProject();
     }
     projectsArray.push(newObject);
-    console.log(projectsArray)
+    modalScreen.classList.add("modalHide");
 }
 
 const addTaskButton = document.querySelector('#addTaskButton');
@@ -53,12 +62,18 @@ addTaskButton.addEventListener("click", createNewProject)
 
 // empty existing project/new project field when one/another is selected
 const projects = document.querySelector('#projects');
-const formNewProject = document.querySelector('#new-project');
 projects.addEventListener("click", () => {
     formNewProject.value = "";
 })
+const formNewProject = document.querySelector('#new-project');
 formNewProject.addEventListener("click", () => {
     projects.selectedIndex = 0;
+})
+
+const closeButton = document.querySelector('#close-modal')
+closeButton.addEventListener("click", () => {
+    const modalScreen = document.querySelector('.form-modal');
+    modalScreen.classList.add("modalHide");
 })
 
 export { createNewProject, projectsArray }
