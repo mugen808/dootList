@@ -6,6 +6,7 @@ newtaskButton.addEventListener("click", () => {
 
 const projectsArray = [];
 
+
 function getPriority () {
     const itemPriority = document.querySelector('.radio').children;
     for (let i = 0; i < itemPriority.length; i++) {
