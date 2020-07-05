@@ -3,15 +3,27 @@ import { createNewProject, projectsArray } from './newtask';
 
 
 // change left-menu buttons cosmetic on click
+// CHECK FOR REFACTORING (AIM FOR LESS REPETITION)
 const leftButtons = document.querySelector('.menu')
 leftButtons.addEventListener("click", changeButtons)
 function changeButtons (e) {
     const currentActive = document.querySelector('.menu-left-active')
+    const clearProjects = document.querySelector('.project.selected')
     if (e.target.classList.contains("menu-button") && !e.target.classList.contains("menu-left-active")) {
-        currentActive.classList.remove('menu-left-active');
+        if (currentActive) {
+            currentActive.classList.remove('menu-left-active');
+        }
+        if (clearProjects) {
+            clearProjects.classList.remove("selected")
+        }
         e.target.classList.add("menu-left-active");
     } else if (e.target.parentElement.classList.contains("menu-button") && !e.target.parentElement.classList.contains(".menu-left-active")) {
-        currentActive.classList.remove('menu-left-active');
+        if (currentActive) {
+            currentActive.classList.remove('menu-left-active');
+        }
+        if (clearProjects) {
+            clearProjects.classList.remove("selected")
+        }
         e.target.parentElement.classList.add("menu-left-active");
     }
 }
@@ -33,13 +45,16 @@ for (let i = 0; i < projectList.length; i++) {
     projectList[i].addEventListener("click", changeProject)
 }
 function changeProject(e) {
-    const currentProject = document.getElementsByClassName("project selected")
-    console.log(currentProject[0])
+    const currentProject = document.getElementsByClassName("project selected");
+    const deselectMenu = document.querySelector(".menu-left-active")
     if (!e.path[1].classList.contains(".selected") && currentProject[0]) {
         currentProject[0].classList.remove("selected");
         e.path[1].classList.add("selected");
     } else {
         e.path[1].classList.add("selected");
+    }
+    if (deselectMenu) {
+        deselectMenu.classList.remove("menu-left-active")
     }
 }
 
